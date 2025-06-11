@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-  --primary: #65b530;
+  --primary: #e25f17;
   --secondary: #9b9b9b;
   --light: #f5f5f5;
   --dark: #161616;
@@ -557,4 +557,21 @@
   height: 40px;
   object-fit: contain;
   display: block;
+}
+
+.btn-personalizado {
+  padding: 8px 20px;
+  font-weight: 500;
+  border-radius: 5px;
+  border: 1px solid #e25f17;
+  color: #e25f17;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-personalizado:hover {
+  background-color: #e25f17;
+  color: #fff;
 }
