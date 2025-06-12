@@ -572,6 +572,7 @@
 }
 
 .btn-personalizado:hover {
-  background-color: #e25f17;
+  background-color: #e2a048;
   color: #fff;
+  border: 1px solid #e2a048;
 }
