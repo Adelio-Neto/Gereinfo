@@ -536,8 +536,8 @@ progress {
 .container-xl,
 .container-xxl {
   width: 100%;
-  padding-right: var(--bs-gutter-x, 0.75rem);
-  padding-left: var(--bs-gutter-x, 0.75rem);
+  padding-right: var(--bs-gutter-x, 0.7rem);
+  padding-left: var(--bs-gutter-x, 0.7rem);
   margin-right: auto;
   margin-left: auto;
 }
@@ -2554,8 +2554,8 @@ fieldset:disabled .btn {
 }
 .btn-primary:hover {
   color: #000;
-  background-color: #e2a048;
-  border-color: #e2a048;
+  background-color: #ff640ae7;
+  border-color: #ff620a;
 }
 .btn-check:focus + .btn-primary,
 .btn-primary:focus {
