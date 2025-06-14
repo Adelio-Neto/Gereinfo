@@ -290,17 +290,16 @@
 }
 
 .hero .hero-cta .btn-primary {
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
-  color: var(--contrast-color);
+  border: 1px solid #fff;
+  color: #fff;
   padding: 0.75rem 1.5rem;
   font-weight: 600;
   transition: all 0.3s ease;
 }
 
 .hero .hero-cta .btn-primary:hover {
-  background-color: color-mix(in srgb, var(--accent-color), #ff620a 10%);
-  border-color: color-mix(in srgb, var(--accent-color), #ff620a 10%);
+  background-color: #fff;
+  color: #ff620a;
 }
 
 .hero .hero-cta .btn-link {
