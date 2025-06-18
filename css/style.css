@@ -167,8 +167,7 @@
 .hero-image {
   max-width: 100%;
   width: 100%;
-  height: 400px;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 10px;
 }
 
@@ -914,10 +913,12 @@
 
 .footer .copyright {
   padding: 30px 0;
+  background-color: #ff620a;
 }
 
 .footer .copyright p {
   margin-bottom: 0;
+  color: #ffffff;
 }
 
 .footer .credits {
@@ -929,7 +930,7 @@
   font-size: 18px;
   display: inline-block;
   background: color-mix(in srgb, var(--default-color), transparent 92%);
-  color: var(--accent-color);
+  color: #fff;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -1282,6 +1283,7 @@
   justify-content: center;
   align-items: center;
   color: #fff;
+  border: 1px solid #ffffff17;
   font-size: 20px;
 }
 
@@ -1527,4 +1529,24 @@
       transform: translateX(0);
     }
   }
+}
+
+.portfolio .portfolio-filters {
+  padding: 0;
+  margin: 0 auto 20px auto;
+  list-style: none;
+  text-align: center;
+}
+
+.portfolio .portfolio-filters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 10px;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
 }
