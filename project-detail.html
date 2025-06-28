@@ -84,9 +84,9 @@
           <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
             <div class="navbar-nav py-4 py-lg-0">
               <a href="index.html" class="nav-item nav-link ">Início</a>
-              <a href="#about" class="nav-item nav-link">Sobre Nós</a>
+              <a href="#about" class="nav-item nav-link ">Sobre Nós</a>
               <a href="#service" class="nav-item nav-link">Serviços</a>
-              <a href="#project" class="nav-item nav-link">Projetos</a>
+              <a href="#project" class="nav-item nav-link active">Projetos</a>
               <div class="nav-item dropdown">
                 <a
                   href="#"
@@ -100,7 +100,7 @@
                   <a href="#testimonial" class="dropdown-item">Testemunhos</a>
                 </div>
               </div>
-              <a href="contact.html" class="nav-item nav-link active">Contacte-nos</a>
+              <a href="contact.html" class="nav-item nav-link ">Contacte-nos</a>
               <a
                 href=""
                 class="btn-personalizado d-block d-lg-none mt-3 text-center mx-auto"
@@ -119,78 +119,142 @@
 
 
     <!-- Page Header Start -->
-    <div class="container-fluid page-header py-5">
+    <div class="container-fluid page-header py-5 mb-5" id="about">
         <div class="container py-5">
-            <h1 class="display-3 text-white mb-3 animated slideInDown">Contacte-nos</h1>
+            <h1 class="display-3 text-white mb-3 animated slideInDown"> Projeto detalhe</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a class="text-white" href="#">Início</a></li>
-                    <li class="breadcrumb-item text-white active" aria-current="page">Contacte-nos</li>
+          
+                    <li class="breadcrumb-item text-white active" aria-current="page">Projeto detalhe</li>
                 </ol>
             </nav>
         </div>
     </div>
     <!-- Page Header End -->
 
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section py-5">
 
-    <!-- Contact Start -->
-    <div class="container-fluid bg-light overflow-hidden px-lg-0">
-        <div class="container contact px-lg-0">
-            <div class="row g-0 mx-lg-0">
-                <div class="col-lg-6 contact-text py-5 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="p-lg-5 ps-lg-0">
-                        <div class="section-title text-start">
-                            <h1 class="display-5 mb-4">Contacte-nos</h1>
-                        </div>
-                        <p class="mb-4">Seja bem-vindo! Estamos disponíveis para esclarecer suas dúvidas e atender suas necessidades com excelência</p>
-                        <div class="col-lg-12" data-aos="fade-left" data-aos-delay="200">
-                        <div class="contact-form-wrapper">
-                          <form action="forms/contact.php" method="post" class="php-email-form">
-                            <div class="mb-3">
-                            
-                              <input type="text" name="name" class="form-control" id="contactName" placeholder="Digite seu nome completo" required="">
-                            </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-                            <div class="mb-3">
-                            
-                              <input type="email" class="form-control" name="email" id="contactEmail" placeholder="Digite seu endereço de email" required="">
-                            </div>
-
-                            <div class="mb-3">
-                            
-                              <input type="tel" class="form-control" name="phone" id="contactPhone" placeholder="Digite seu número de telefone">
-                            </div>
-
-                            <div class="mb-3">
-                            
-                              <input type="text" class="form-control" name="subject" id="contactSubject" placeholder="Digite o assunto da mensagem" required="">
-                            </div>
-
-                            <div class="mb-4">
-                              
-                              <textarea class="form-control message-textarea" name="message" id="contactMessage" rows="5" placeholder="Digite sua mensagem" required=""></textarea>
-                            </div>
-
-                              <div class="col-12">
-                                  <button class="btn btn-primary w-100 py-3" type="submit">Enviar Mensagem</button>
-                              </div>
-                          </form>
-
-                        </div>
-                      </div>
-                    </div>
+        <div class="project-header">
+          <div class="row">
+            <div class="col-lg-7" data-aos="fade-up">
+              <h1 class="project-title">Sistema de Controle e Segurança Eletrônico </h1>
+              <div class="project-meta">
+                <div class="meta-item">
+                  <i class="bi bi-calendar3"></i>
+                  <span>June 2024</span>
                 </div>
-                <div class="col-lg-6 pe-lg-0" style="min-height: 400px;">
-                    <div class="position-relative h-100">
-                        <iframe class="position-absolute w-100 h-100" style="object-fit: cover;"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3115.832047797735!2d13.349520907800104!3d-8.854263601958149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a51f7410a19e1b3%3A0xef0999b2e6093a29!2sArreiou%20Rua%20Direita%20da%20Ponte%20Partida!5e1!3m2!1spt-PT!2sao!4v1749713208457!5m2!1spt-PT!2sao" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
+                <div class="meta-item">
+                  <i class="bi bi-building"></i>
+                  <span>FinTech Innovations Inc.</span>
                 </div>
+              </div>
+
             </div>
-        </div>
-    </div>
-    <!-- Contact End -->
 
- <footer id="footer" class="footer border">
+          </div>
+        </div>
+
+        <div class="media-showcase" data-aos="zoom-in" data-aos-delay="100">
+          <div class="portfolio-details-slider swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 800,
+                "autoplay": {
+                  "delay": 5000
+                },
+                "effect": "fade",
+                "fadeEffect": {
+                  "crossFade": true
+                },
+                "slidesPerView": 1,
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "clickable": true,
+                  "dynamicBullets": true
+                }
+              }
+            </script>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="img/portfolio-1.jpg" alt="Portfolio Image" class="img-fluid">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/portfolio-2.jpg" alt="Portfolio Image" class="img-fluid">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/portfolio-3.jpg" alt="Portfolio Image" class="img-fluid">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+        <div class="project-content">
+          <div class="row gy-4">
+            <div class="col-lg-10" data-aos="fade-up">
+              <div class="description-box">
+                <h3>Project Overview</h3>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim, justo non commodo pellentesque, eros massa convallis ipsum, vel ultrices mauris arcu nec magna. Vestibulum ante ipsum primis in faucibus orci luctus et.</p>
+                <p>Nulla porttitor accumsan tincidunt. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Curabitur aliquet quam id dui posuere blandit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a nulla porttitor accumsan.</p>
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="project-gallery" data-aos="fade-up" data-aos-delay="200">
+            <h3>Project Gallery</h3>
+            <div class="row g-3">
+              <div class="col-6 col-md-3">
+                <div class="gallery-item">
+                  <img src="img/portfolio-1.jpg" alt="Project Image" class="img-fluid glightbox">
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="gallery-item">
+                  <img src="img/portfolio-1.jpg" alt="Project Image" class="img-fluid glightbox">
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="gallery-item">
+                  <img src="img/portfolio-1.jpg" alt="Project Image" class="img-fluid glightbox">
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="gallery-item">
+                  <img src="img/portfolio-1.jpg" alt="Project Image" class="img-fluid glightbox">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-navigation" data-aos="fade-up" data-aos-delay="300">
+            <a href="#" class="prev-project">
+              <i class="bi bi-arrow-left"></i>
+              <span>Anterior Projeto</span>
+            </a>
+
+            <a href="#" class="next-project">
+              <span>Próximo Projeto</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Details Section -->
+
+
+
+        
+
+   <footer id="footer" class="footer border">
 
     <div class="footer-top">
       <div class="container">
@@ -283,7 +347,7 @@
       <i class="fab fa-whatsapp"></i>
     </a>
 
-     <!-- JavaScript Libraries -->
+    <!-- JavaScript Libraries -->
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
@@ -299,6 +363,27 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script src="js/script.js"></script>
+
+        <script>
+      const swiper = new Swiper('.testimonial-slider', {
+        loop: true,
+        speed: 800,
+        autoplay: {
+          delay: 3500
+        },
+        slidesPerView: 1,
+        spaceBetween: 0,
+        navigation: {
+          nextEl: '.slider-next',
+          prevEl: '.slider-prev'
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 1
+          }
+        }
+      });
+    </script>
 
   </body>
 </html>
