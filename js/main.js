@@ -96,5 +96,20 @@
     });
   }
 
+  document.addEventListener("DOMContentLoaded", function () {
+    const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+    const navbarCollapse = document.getElementById("navbarCollapse");
+
+    navLinks.forEach(function (link) {
+      link.addEventListener("click", function () {
+        if (window.innerWidth < 992) {
+          const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+            toggle: false,
+          });
+          bsCollapse.hide();
+        }
+      });
+    });
+  });
   window.addEventListener("load", initSwiper);
 })(jQuery);

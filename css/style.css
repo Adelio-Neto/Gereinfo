@@ -66,6 +66,9 @@
   justify-content: center;
   font-weight: normal;
 }
+body {
+  overflow-x: hidden;
+}
 
 /*** Navbar ***/
 .navbar.sticky-top {
@@ -611,6 +614,13 @@
 .portfolio-inner:hover .portfolio-text {
   bottom: 0;
   opacity: 1;
+}
+
+.portfolio-details-slider img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: contain;
 }
 
 /*** Quote ***/
@@ -1662,10 +1672,14 @@
 }
 
 .portfolio-details .media-showcase {
-  margin-bottom: var(--content-spacing);
-  border-radius: var(--card-border-radius);
+  margin-bottom: -200px;
   overflow: hidden;
-  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.08);
+}
+@media (min-width: 900px) {
+  .portfolio-details .media-showcase {
+    margin-bottom: 40px;
+    overflow: hidden;
+  }
 }
 
 .portfolio-details .media-showcase .swiper-wrapper {
@@ -1674,8 +1688,7 @@
 
 .portfolio-details .media-showcase .swiper-slide img {
   width: 100%;
-  aspect-ratio: 16/9;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .portfolio-details .media-showcase .swiper-pagination {
@@ -1941,66 +1954,28 @@
 .portfolio-details .project-content .project-navigation {
   display: flex;
   justify-content: space-between;
-  padding-top: 2.5rem;
-  border-top: 1px solid
-    color-mix(in srgb, var(--default-color), transparent 90%);
+  width: 100%;
+  padding: 2.5rem;
 }
 
 .portfolio-details .project-content .project-navigation a {
-  display: flex;
-  align-items: center;
-  color: var(--heading-color);
+  gap: 5px;
   font-weight: 600;
-  transition: all 0.3s;
+  color: #000000;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
-.portfolio-details .project-content .project-navigation a i {
-  font-size: 1.2rem;
-  transition: all 0.3s;
+.portfolio-details .project-content .project-navigation a:hover {
+  color: #ff620a;
 }
 
 .portfolio-details .project-content .project-navigation a.prev-project i {
   margin-right: 8px;
 }
 
-.portfolio-details .project-content .project-navigation a.prev-project:hover {
-  color: var(--accent-color);
-}
-
 .portfolio-details .project-content .project-navigation a.prev-project:hover i {
   transform: translateX(-5px);
-}
-
-.portfolio-details .project-content .project-navigation a.all-projects {
-  border: 2px solid color-mix(in srgb, var(--heading-color), transparent 80%);
-  padding: 8px 16px;
-  border-radius: 30px;
-}
-
-.portfolio-details .project-content .project-navigation a.all-projects i {
-  margin-right: 8px;
-}
-
-.portfolio-details .project-content .project-navigation a.all-projects:hover {
-  background-color: var(--accent-color);
-  color: var(--contrast-color);
-  border-color: var(--accent-color);
-}
-
-.portfolio-details .project-content .project-navigation a.all-projects:hover i {
-  transform: scale(1.1);
-}
-
-.portfolio-details .project-content .project-navigation a.next-project i {
-  margin-left: 8px;
-}
-
-.portfolio-details .project-content .project-navigation a.next-project:hover {
-  color: var(--accent-color);
-}
-
-.portfolio-details .project-content .project-navigation a.next-project:hover i {
-  transform: translateX(5px);
 }
 
 @media (max-width: 991px) {
