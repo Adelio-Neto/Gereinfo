@@ -42,6 +42,14 @@
   color: #ffffff;
 }
 
+.btn.btn-secundary {
+  color: #ffffff;
+}
+
+.btn.btn-secundary:hover {
+  background-color: #fff;
+  color: #ff620a;
+}
 .btn-square {
   width: 38px;
   height: 38px;
