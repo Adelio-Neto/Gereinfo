@@ -82,7 +82,7 @@
           <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
             <div class="navbar-nav py-4 py-lg-0">
               <a href="index.html" class="nav-item nav-link active">Início</a>
-              <a href="#about" class="nav-item nav-link ">Sobre Nós</a>
+              <a href="about.html" class="nav-item nav-link ">Sobre Nós</a>
               <a href="#service" class="nav-item nav-link">Serviços</a>
               <a href="#project" class="nav-item nav-link ">Projetos</a>
               <div class="nav-item dropdown">
@@ -1176,6 +1176,8 @@
       <i class="fab fa-whatsapp"></i>
     </a>
 
+        
+    <!-- Cabeçalho Estilo Card 
   <div class="modal" id="modal" style="display: none;">
     <div class="modal-content">
       <div class="col-lg-12">
@@ -1190,6 +1192,30 @@
       </div>
     </div>
   </div>
+
+-->
+<div class="modal" id="modal" style="display: none;">
+  <div class="modal-content">
+    <div class="modal-header-card">
+      <div class="icon-area">
+            <span id="modal-title"></span>
+      </div>
+      <button class="close-button" onclick="closeModal()">&times;</button>
+    </div>
+    <div class="modal-body col-lg-12">
+      <div class="modal-left">
+     
+        <div id="modal-descricao"></div>
+        <button class="request-button"  onclick="window.open('project-detail.html', '_blank')">Ver Projetos</button>
+      </div>
+      <div class="modal-right" id="modal-imagens">
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
 
 
     <script src="js/jquery-3.4.1.min.js"></script>

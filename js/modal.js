@@ -1,29 +1,22 @@
 function openModal(id) {
   const service = servicesData.find((s) => s.id === id);
   if (service) {
-    // Preencher Título
-    document.querySelector("#modal .services-intro h2").textContent =
-      service.titulo;
+    document.getElementById("modal-title").textContent = service.titulo;
 
-    // Preencher Descrição
-    const paragraphs = service.descricao.map((p) => `<p>${p}</p>`).join("");
-    document.querySelector(
-      "#modal .services-intro"
-    ).innerHTML = `<h2>${service.titulo}</h2>${paragraphs}`;
+    const descricaoDiv = document.getElementById("modal-descricao");
+    descricaoDiv.innerHTML = service.descricao
+      .map((p) => `<p>${p}</p>`)
+      .join("");
 
-    // Preencher Imagens no lado direito
-    const ajustarDiv = document.querySelector("#modal .ajustar");
-    ajustarDiv.innerHTML = "";
+    const imagensDiv = document.getElementById("modal-imagens");
+    imagensDiv.innerHTML = "";
     service.imagens.forEach((src) => {
       const img = document.createElement("img");
       img.src = src;
-      img.style.width = "100%";
-      img.style.marginBottom = "10px";
-      ajustarDiv.appendChild(img);
+      imagensDiv.appendChild(img);
     });
 
-    // Exibir Modal
-    document.getElementById("modal").style.display = "block";
+    document.getElementById("modal").style.display = "flex";
   }
 }
 
