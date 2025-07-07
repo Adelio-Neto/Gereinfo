@@ -2162,3 +2162,30 @@ body {
     max-width: 100%;
   }
 }
+
+.step-card {
+  position: relative;
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+  padding: 2rem 1rem 1rem;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.step-circle {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  position: absolute;
+  top: -30px;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.007);
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.2rem;
+}
