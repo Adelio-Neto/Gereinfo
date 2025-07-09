@@ -74,7 +74,8 @@
   justify-content: center;
   font-weight: normal;
 }
-body {
+body,
+html {
   overflow-x: hidden;
 }
 
@@ -2189,7 +2190,6 @@ body {
   transform: translateX(-50%);
   font-size: 1.2rem;
 }
-
 
 .custom-card {
   width: 100%;
