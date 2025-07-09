@@ -2190,25 +2190,13 @@ body {
   font-size: 1.2rem;
 }
 
-.card-container {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  padding: 40px;
-  background: #fff;
-  flex-wrap: wrap;
-  align-items: flex-start;
-}
 
 .custom-card {
-  width: 300px;
+  width: 100%;
   background: white;
-  border-radius: 15px;
-  padding: 20px;
-  text-align: center;
+  padding: 0px;
   transition: all 0.3s ease;
   cursor: pointer;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   position: relative;
   display: flex;
